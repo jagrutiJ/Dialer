@@ -1,0 +1,6 @@
+framework module Pods_Dialer {
+  umbrella header "Pods-Dialer-umbrella.h"
+
+  export *
+  module * { export * }
+}

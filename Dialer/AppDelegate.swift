@@ -8,15 +8,22 @@
 
 import UIKit
 import CoreData
+import GoogleMobileAds
+import Intents
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
+  var coreDataManager: CoreDataManager!
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+   // coreDataManager = CoreDataManager(storeName: "Dialer")
+    GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
+
     return true
   }
 
@@ -89,5 +96,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       }
   }
 
+}
+extension AppDelegate {
+  
+  func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+    
+    guard let audioCallIntent = userActivity.interaction?.intent as? INStartAudioCallIntent else {
+      return false
+    }
+    
+    if let contact = audioCallIntent.contacts?.first {
+      
+      if let type = contact.personHandle?.type, type == .phoneNumber {
+        
+        guard let callNumber = contact.personHandle?.value else {
+          return false
+        }
+        let cleanPhoneNumber = callNumber.replacingOccurrences(of: " ", with: "")
+
+        let callUrl = URL(string: "tel://\(cleanPhoneNumber)")
+        
+        if UIApplication.shared.canOpenURL(callUrl!) {
+          UIApplication.shared.open(callUrl!, options: [:],  completionHandler: {
+            (success) in
+            print("Open")
+          })
+          let contactmodel = ContactModel()
+          contactmodel.phone = cleanPhoneNumber
+          contactmodel.name = contact.displayName
+          ContactStoreManager.saveContact(contactmodel, completionHandler: nil)
+        } else {
+          
+          let alertController = UIAlertController(title: nil , message: "Calling not supported", preferredStyle: .alert)
+          let okAlertAction = UIAlertAction(title: "Ok" , style: UIAlertActionStyle.default, handler:nil)
+          alertController.addAction(okAlertAction)
+          self.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+        }
+      }
+    }
+    
+    return true
+  }
 }
 

@@ -7,15 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22DBADBEEC766B2F40A4F0F /* Pods_Dialer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E2F78AD74D487D47F4C10C /* Pods_Dialer.framework */; };
+		FC23807E214BD6C800CA7031 /* DialPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23807D214BD6C800CA7031 /* DialPadViewController.swift */; };
+		FC4F0A562147FA0D00328DDF /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC4F0A552147FA0D00328DDF /* ContactTableViewCell.xib */; };
+		FC4F0A582147FA1400328DDF /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F0A572147FA1400328DDF /* ContactTableViewCell.swift */; };
+		FC53636121C274040032E6FE /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53636021C274040032E6FE /* IntentHandler.swift */; };
+		FC53637621C274040032E6FE /* Intents Handler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC53635E21C274030032E6FE /* Intents Handler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC53638C21C299110032E6FE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53638B21C299110032E6FE /* DataManager.swift */; };
+		FC53638D21C2A2AA0032E6FE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53638B21C299110032E6FE /* DataManager.swift */; };
+		FC7758E421A6C65C00C4A318 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7758E321A6C65C00C4A318 /* CoreDataManager.swift */; };
+		FC77590A21AC014900C4A318 /* ContactStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77590921AC014900C4A318 /* ContactStoreManager.swift */; };
+		FC77590C21AC408A00C4A318 /* RecentCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77590B21AC408A00C4A318 /* RecentCallViewController.swift */; };
+		FC809C0721B5427000F541FE /* RecentCallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC809C0521B5427000F541FE /* RecentCallTableViewCell.swift */; };
+		FC809C0821B5427000F541FE /* RecentCallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC809C0621B5427000F541FE /* RecentCallTableViewCell.xib */; };
+		FC866EFA21C148DC003DF5A3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC866EF921C148DC003DF5A3 /* SettingsViewController.swift */; };
 		FCBC1A3A20C930ED0040644A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC1A3920C930ED0040644A /* AppDelegate.swift */; };
 		FCBC1A3C20C930ED0040644A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC1A3B20C930ED0040644A /* ViewController.swift */; };
 		FCBC1A3F20C930ED0040644A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBC1A3D20C930ED0040644A /* Main.storyboard */; };
 		FCBC1A4220C930ED0040644A /* Dialer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCBC1A4020C930ED0040644A /* Dialer.xcdatamodeld */; };
 		FCBC1A4420C930F00040644A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBC1A4320C930F00040644A /* Assets.xcassets */; };
 		FCBC1A4720C930F00040644A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBC1A4520C930F00040644A /* LaunchScreen.storyboard */; };
+		FCBC1A4F20C9415C0040644A /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC1A4E20C9415C0040644A /* ContactViewController.swift */; };
+		FCFF4ACD20ECCCEF0090E405 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFF4ACC20ECCCEF0090E405 /* ContactModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FC53637421C274040032E6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCBC1A2E20C930ED0040644A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC53635D21C274030032E6FE;
+			remoteInfo = "Intents Handler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC53637D21C274040032E6FE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC53637621C274040032E6FE /* Intents Handler.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		38300186FA6889490CE6EA68 /* Pods-Dialer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dialer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dialer/Pods-Dialer.release.xcconfig"; sourceTree = "<group>"; };
+		58E2F78AD74D487D47F4C10C /* Pods_Dialer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dialer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		607F316D3B8D2972D18855B1 /* Pods-Dialer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dialer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dialer/Pods-Dialer.debug.xcconfig"; sourceTree = "<group>"; };
+		FC23807D214BD6C800CA7031 /* DialPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialPadViewController.swift; sourceTree = "<group>"; };
+		FC4F0A552147FA0D00328DDF /* ContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		FC4F0A572147FA1400328DDF /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		FC53635E21C274030032E6FE /* Intents Handler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intents Handler.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC53636021C274040032E6FE /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		FC53636221C274040032E6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC53636821C274040032E6FE /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		FC53638B21C299110032E6FE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FC53638E21C3BE6F0032E6FE /* Dialer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dialer.entitlements; sourceTree = "<group>"; };
+		FC53638F21C3C3C80032E6FE /* Intents Handler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Intents Handler.entitlements"; sourceTree = "<group>"; };
+		FC7758E321A6C65C00C4A318 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FC77590921AC014900C4A318 /* ContactStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStoreManager.swift; sourceTree = "<group>"; };
+		FC77590B21AC408A00C4A318 /* RecentCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCallViewController.swift; sourceTree = "<group>"; };
+		FC809C0521B5427000F541FE /* RecentCallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCallTableViewCell.swift; sourceTree = "<group>"; };
+		FC809C0621B5427000F541FE /* RecentCallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentCallTableViewCell.xib; sourceTree = "<group>"; };
+		FC866EF921C148DC003DF5A3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FCBC1A3620C930ED0040644A /* Dialer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dialer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBC1A3920C930ED0040644A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCBC1A3B20C930ED0040644A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,24 +83,104 @@
 		FCBC1A4320C930F00040644A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCBC1A4620C930F00040644A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCBC1A4820C930F00040644A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBC1A4E20C9415C0040644A /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		FCFF4ACC20ECCCEF0090E405 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FCBC1A3320C930ED0040644A /* Frameworks */ = {
+		FC53635B21C274030032E6FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCBC1A3320C930ED0040644A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22DBADBEEC766B2F40A4F0F /* Pods_Dialer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BBD7D2F454CF06B5A20FC7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58E2F78AD74D487D47F4C10C /* Pods_Dialer.framework */,
+				FC53636821C274040032E6FE /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6457FB8EC72AE76B74ECC75F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				607F316D3B8D2972D18855B1 /* Pods-Dialer.debug.xcconfig */,
+				38300186FA6889490CE6EA68 /* Pods-Dialer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC1FDC1D215526FD003324E7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FC7758E321A6C65C00C4A318 /* CoreDataManager.swift */,
+				FC77590921AC014900C4A318 /* ContactStoreManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FC23807C214BD69200CA7031 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCBC1A4E20C9415C0040644A /* ContactViewController.swift */,
+				FC23807D214BD6C800CA7031 /* DialPadViewController.swift */,
+				FC77590B21AC408A00C4A318 /* RecentCallViewController.swift */,
+				FC866EF921C148DC003DF5A3 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FC4F0A542147F9B600328DDF /* CustomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F0A572147FA1400328DDF /* ContactTableViewCell.swift */,
+				FC4F0A552147FA0D00328DDF /* ContactTableViewCell.xib */,
+				FC809C0521B5427000F541FE /* RecentCallTableViewCell.swift */,
+				FC809C0621B5427000F541FE /* RecentCallTableViewCell.xib */,
+			);
+			path = CustomeCell;
+			sourceTree = "<group>";
+		};
+		FC53635F21C274040032E6FE /* Intents Handler */ = {
+			isa = PBXGroup;
+			children = (
+				FC53638F21C3C3C80032E6FE /* Intents Handler.entitlements */,
+				FC53636021C274040032E6FE /* IntentHandler.swift */,
+				FC53636221C274040032E6FE /* Info.plist */,
+			);
+			path = "Intents Handler";
+			sourceTree = "<group>";
+		};
+		FC53638A21C298E20032E6FE /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				FC53638B21C299110032E6FE /* DataManager.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
 		FCBC1A2D20C930ED0040644A = {
 			isa = PBXGroup;
 			children = (
 				FCBC1A3820C930ED0040644A /* Dialer */,
+				FC53635F21C274040032E6FE /* Intents Handler */,
 				FCBC1A3720C930ED0040644A /* Products */,
+				6457FB8EC72AE76B74ECC75F /* Pods */,
+				2BBD7D2F454CF06B5A20FC7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				FCBC1A3620C930ED0040644A /* Dialer.app */,
+				FC53635E21C274030032E6FE /* Intents Handler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +196,15 @@
 		FCBC1A3820C930ED0040644A /* Dialer */ = {
 			isa = PBXGroup;
 			children = (
+				FC53638E21C3BE6F0032E6FE /* Dialer.entitlements */,
+				FC53638A21C298E20032E6FE /* Contacts */,
+				FC1FDC1D215526FD003324E7 /* Database */,
+				FC4F0A542147F9B600328DDF /* CustomeCell */,
+				FCFF4ACB20ECCCC50090E405 /* Model */,
 				FCBC1A3920C930ED0040644A /* AppDelegate.swift */,
 				FCBC1A3B20C930ED0040644A /* ViewController.swift */,
 				FCBC1A3D20C930ED0040644A /* Main.storyboard */,
+				FC23807C214BD69200CA7031 /* ViewControllers */,
 				FCBC1A4320C930F00040644A /* Assets.xcassets */,
 				FCBC1A4520C930F00040644A /* LaunchScreen.storyboard */,
 				FCBC1A4820C930F00040644A /* Info.plist */,
@@ -67,20 +213,48 @@
 			path = Dialer;
 			sourceTree = "<group>";
 		};
+		FCFF4ACB20ECCCC50090E405 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCFF4ACC20ECCCEF0090E405 /* ContactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FCBC1A3520C930ED0040644A /* Dialer */ = {
+		FC53635D21C274030032E6FE /* Intents Handler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCBC1A4B20C930F00040644A /* Build configuration list for PBXNativeTarget "Dialer" */;
+			buildConfigurationList = FC53637C21C274040032E6FE /* Build configuration list for PBXNativeTarget "Intents Handler" */;
 			buildPhases = (
-				FCBC1A3220C930ED0040644A /* Sources */,
-				FCBC1A3320C930ED0040644A /* Frameworks */,
-				FCBC1A3420C930ED0040644A /* Resources */,
+				FC53635A21C274030032E6FE /* Sources */,
+				FC53635B21C274030032E6FE /* Frameworks */,
+				FC53635C21C274030032E6FE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = "Intents Handler";
+			productName = "Intents Handler";
+			productReference = FC53635E21C274030032E6FE /* Intents Handler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FCBC1A3520C930ED0040644A /* Dialer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBC1A4B20C930F00040644A /* Build configuration list for PBXNativeTarget "Dialer" */;
+			buildPhases = (
+				931C7C19772ED7BFA608DA30 /* [CP] Check Pods Manifest.lock */,
+				FCBC1A3220C930ED0040644A /* Sources */,
+				FCBC1A3320C930ED0040644A /* Frameworks */,
+				FCBC1A3420C930ED0040644A /* Resources */,
+				FC53637D21C274040032E6FE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC53637521C274040032E6FE /* PBXTargetDependency */,
 			);
 			name = Dialer;
 			productName = Dialer;
@@ -93,12 +267,34 @@
 		FCBC1A2E20C930ED0040644A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Jagruti;
 				TargetAttributes = {
+					FC53635D21C274030032E6FE = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
 					FCBC1A3520C930ED0040644A = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -116,35 +312,97 @@
 			projectRoot = "";
 			targets = (
 				FCBC1A3520C930ED0040644A /* Dialer */,
+				FC53635D21C274030032E6FE /* Intents Handler */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FC53635C21C274030032E6FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCBC1A3420C930ED0040644A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4F0A562147FA0D00328DDF /* ContactTableViewCell.xib in Resources */,
 				FCBC1A4720C930F00040644A /* LaunchScreen.storyboard in Resources */,
 				FCBC1A4420C930F00040644A /* Assets.xcassets in Resources */,
+				FC809C0821B5427000F541FE /* RecentCallTableViewCell.xib in Resources */,
 				FCBC1A3F20C930ED0040644A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		931C7C19772ED7BFA608DA30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dialer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		FC53635A21C274030032E6FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC53636121C274040032E6FE /* IntentHandler.swift in Sources */,
+				FC53638D21C2A2AA0032E6FE /* DataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCBC1A3220C930ED0040644A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4F0A582147FA1400328DDF /* ContactTableViewCell.swift in Sources */,
+				FC77590C21AC408A00C4A318 /* RecentCallViewController.swift in Sources */,
+				FC23807E214BD6C800CA7031 /* DialPadViewController.swift in Sources */,
 				FCBC1A4220C930ED0040644A /* Dialer.xcdatamodeld in Sources */,
+				FCBC1A4F20C9415C0040644A /* ContactViewController.swift in Sources */,
+				FC809C0721B5427000F541FE /* RecentCallTableViewCell.swift in Sources */,
+				FC7758E421A6C65C00C4A318 /* CoreDataManager.swift in Sources */,
+				FC77590A21AC014900C4A318 /* ContactStoreManager.swift in Sources */,
 				FCBC1A3C20C930ED0040644A /* ViewController.swift in Sources */,
+				FCFF4ACD20ECCCEF0090E405 /* ContactModel.swift in Sources */,
 				FCBC1A3A20C930ED0040644A /* AppDelegate.swift in Sources */,
+				FC53638C21C299110032E6FE /* DataManager.swift in Sources */,
+				FC866EFA21C148DC003DF5A3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC53637521C274040032E6FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC53635D21C274030032E6FE /* Intents Handler */;
+			targetProxy = FC53637421C274040032E6FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FCBC1A3D20C930ED0040644A /* Main.storyboard */ = {
@@ -166,6 +424,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FC53637721C274040032E6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Intents Handler/Intents Handler.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G7XV49T5UR;
+				INFOPLIST_FILE = "Intents Handler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.jj.j.group;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Siri;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC53637821C274040032E6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Intents Handler/Intents Handler.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Intents Handler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.jj.j.group;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FCBC1A4920C930F00040644A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,16 +589,23 @@
 		};
 		FCBC1A4C20C930F00040644A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 607F316D3B8D2972D18855B1 /* Pods-Dialer.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Dialer/Dialer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G7XV49T5UR;
 				INFOPLIST_FILE = Dialer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = s.Dialer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.jj.j;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NewTestSiri;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,16 +613,23 @@
 		};
 		FCBC1A4D20C930F00040644A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38300186FA6889490CE6EA68 /* Pods-Dialer.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Dialer/Dialer.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Dialer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = s.Dialer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.jj.j;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +638,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FC53637C21C274040032E6FE /* Build configuration list for PBXNativeTarget "Intents Handler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC53637721C274040032E6FE /* Debug */,
+				FC53637821C274040032E6FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FCBC1A3120C930ED0040644A /* Build configuration list for PBXProject "Dialer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
